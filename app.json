@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Bingle",
-    "slug": "Bingle",
+    "slug": "bingle",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -20,7 +20,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.arshdeep.singh.Bingle"
+      "package": "com.mr_villian08.bingle"
     },
     "web": {
       "output": "static",
@@ -48,8 +48,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "c292c2b3-d4e5-4101-997f-ddc194f4767b"
+        "projectId": "444e11c4-851c-4947-b810-e286e1cab535"
       }
-    }
+    },
+    "owner": "mr_villian08"
   }
 }
