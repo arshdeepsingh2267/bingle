@@ -1,14 +1,17 @@
 import { BlurView } from "expo-blur";
+import { useRouter } from "expo-router";
 import {
   ImageBackground,
   Platform,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from "react-native";
 import image from "../assets/images/Bingle.png";
 
 export default function App() {
+  const router = useRouter();
   return (
     <ImageBackground
       source={image}
@@ -56,6 +59,18 @@ export default function App() {
           </View>
         </View>
       </View>
+      <TouchableOpacity
+        className={`py-4 rounded-lg my-6 bg-pink-500`}
+        // disabled={!isValid}
+        onPress={() => {
+          // console.log("Selected interests:", selectedInterests);
+          router.push("/Matches"); // adjust this to your next route
+        }}
+      >
+        <Text className="text-center text-white text-lg font-bold">
+          Continue
+        </Text>
+      </TouchableOpacity>
     </ImageBackground>
   );
 }

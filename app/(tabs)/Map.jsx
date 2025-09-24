@@ -1,12 +1,12 @@
 import { Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Home = () => {
+const Map = () => {
   return (
     <SafeAreaView>
-      <Text>Home</Text>
+      <Text className="p-2">Map under Development</Text>
     </SafeAreaView>
   );
 };
 
-export default Home;
+export default Map;

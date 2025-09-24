@@ -1,5 +1,5 @@
-import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
+import { ArrowLeft } from "lucide-react-native";
 import { useState } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -17,7 +17,7 @@ export default function GenderSelectionScreen() {
           onPress={() => route.push("/")}
           className="w-8 h-8 justify-center items-center"
         >
-          <Ionicons name="arrow-back" size={24} color="white" />
+          <ArrowLeft name="arrow-back" size={24} color="#fff" />
         </TouchableOpacity>
 
         {/* Heading */}
@@ -35,6 +35,7 @@ export default function GenderSelectionScreen() {
             return (
               <TouchableOpacity
                 key={option}
+                id={option}
                 className={`rounded-lg py-4 text-white items-center my-2 border-2 ${
                   isSelected
                     ? "border-pink-500 text-white"

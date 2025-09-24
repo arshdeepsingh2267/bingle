@@ -1,6 +1,6 @@
-import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { Formik } from "formik";
+import { ArrowLeft } from "lucide-react-native";
 import { useState } from "react";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import CountryPicker from "react-native-country-picker-modal";
@@ -46,7 +46,7 @@ export default function UserDetailsScreen() {
                 onPress={() => router.back()}
                 className="w-8 h-8 justify-center items-center"
               >
-                <Ionicons name="arrow-back" size={24} color="white" />
+                <ArrowLeft name="arrow-back" size={24} color="#fff" />
               </TouchableOpacity>
 
               {/* Heading */}

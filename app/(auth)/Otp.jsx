@@ -1,4 +1,5 @@
 import { useRouter } from "expo-router";
+import { ArrowLeft } from "lucide-react-native";
 import { useState } from "react";
 import { Alert, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -21,6 +22,13 @@ export default function Otp() {
 
   return (
     <SafeAreaView className="flex-1 bg-black px-6 justify-center">
+      <TouchableOpacity
+        onPress={() => router.back()}
+        className="w-8 h-8 justify-center items-center"
+      >
+        <ArrowLeft name="arrow-back" size={24} color="#fff" />
+      </TouchableOpacity>
+
       <View className="items-center">
         <Text className="text-white text-3xl font-bold mb-8 text-center">
           Enter the 4-digit code

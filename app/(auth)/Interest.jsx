@@ -1,4 +1,5 @@
 import { useRouter } from "expo-router";
+import { ArrowLeft } from "lucide-react-native";
 import { useState } from "react";
 import { FlatList, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -33,6 +34,13 @@ export default function Interest() {
 
   return (
     <SafeAreaView className="flex-1 bg-black px-6 justify-between">
+      <TouchableOpacity
+        onPress={() => router.back()}
+        className="w-8 h-8 justify-center items-center"
+      >
+        <ArrowLeft name="arrow-back" size={24} color="#fff" />
+      </TouchableOpacity>
+
       <View style={{ flex: 1 }}>
         <Text className="text-white text-3xl font-bold mt-6 mb-2">
           Your interests
