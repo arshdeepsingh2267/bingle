@@ -12,6 +12,7 @@
       "supportsTablet": true
     },
     "android": {
+      "jsEngine": "hermes",
       "adaptiveIcon": {
         "backgroundColor": "#00000f",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
